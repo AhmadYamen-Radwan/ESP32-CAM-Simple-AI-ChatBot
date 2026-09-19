@@ -30,8 +30,6 @@ const char* ollama_model = "your-model-name";
 - `ollama_token`: Ollama API key
 - `ollama_model`: model name available to your Ollama account
 
-Do not commit real tokens to GitHub. Anyone with the bot token can control the bot, and anyone with the Ollama key can use your account.
-
 ## 2. Create and configure the Telegram bot
 
 1. Open Telegram.
