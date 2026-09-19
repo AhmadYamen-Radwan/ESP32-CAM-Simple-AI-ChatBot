@@ -1,14 +1,33 @@
-# ESP32-CAM Simple AI ChatBot
+# ESP32-CAM Telegram AI Chatbot with Ollama
 
-A simple AI chatbot project for the ESP32-CAM, built with PlatformIO.
+An ESP32-CAM AI chatbot project that connects to Telegram and sends incoming messages to an Ollama model using the Ollama API. Built with Arduino and PlatformIO, this project is a simple way to create an ESP32-CAM Telegram bot that replies with AI-generated answers.
+
+This project is useful if you are looking for:
+
+- ESP32-CAM Telegram bot
+- ESP32 AI chatbot
+- Ollama API ESP32
+- Arduino Telegram bot
+- PlatformIO ESP32 project
+- AI chatbot using ESP32-CAM
 
 ## Hardware note
 
-This project was built and tested using a spare ESP32-CAM whose PSRAM and camera sensor are broken. Because of that, camera functionality may not work, and the board may behave unpredictably when handling large memory-heavy requests. This project is intended as a lightweight Telegram + Ollama chatbot test, not a full camera-enabled AI vision platform.
+This project was built and tested using a spare ESP32-CAM whose PSRAM and camera sensor are broken. Because of that, camera functionality may not work, and the board may behave unpredictably when handling larger inputs or when memory is constrained.
 
 ## Large-context limitation
 
-When processing a large context, the device may return `null` or an HTTP `-11` error. This is expected on hardware with limited or faulty memory resources, especially when PSRAM is unavailable or defective. If that happens, reduce the message size or context length and try again.
+When processing a large context, the device may return `null` or an HTTP `-11` error. This is expected on hardware with limited or faulty memory resources, especially when PSRAM is unavailable or defective.
+
+## Features
+
+- ESP32-CAM Wi-Fi connectivity
+- Telegram bot polling via Bot API
+- Ollama chat completion integration
+- Configurable model name and API key
+- Arduino/PlatformIO project setup
+- Simple, beginner-friendly code structure
+- Serial debugging output for troubleshooting
 
 ## 1. Edit `src/main.cpp`
 
@@ -215,4 +234,21 @@ This is acceptable for a personal test project, but not ideal for production. Fo
 
 ## 9. Project status
 
-This repository is a simple ESP32-CAM Telegram chatbot prototype using PlatformIO and Ollama. It is best suited for testing on hardware that has functioning Wi-Fi and memory. On boards with broken PSRAM or camera hardware, camera features and larger requests may not work properly.
+This repository is a simple ESP32-CAM Telegram chatbot prototype using PlatformIO and Ollama. It is best suited for testing on hardware that has functioning Wi-Fi and memory. On boards with broken PSRAM or a faulty camera sensor, AI responses may work while the camera feature remains unusable.
+
+## 10. Why this repository may be found online
+
+This project is written using common search terms that people often use when looking for ESP32 projects online, including:
+
+- ESP32-CAM Telegram bot
+- ESP32 AI chatbot
+- Ollama ESP32
+- ESP32 PlatformIO chatbot
+- Telegram bot Arduino
+- AI chatbot with ESP32
+
+Using a clear title, a strong repository description, relevant topics, and a README that includes those phrases naturally can help people discover the project more easily on GitHub and search engines.
+
+## License
+
+This project is provided as-is for personal and educational use. If you plan to use it in a production environment, review the network and security implications first.
